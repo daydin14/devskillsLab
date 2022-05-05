@@ -1,13 +1,11 @@
-$("button").click(function () {
-  const li = document.createElement("li");
-  const inp = document.querySelector("input");
-  li.textContent = inp.value;
-  document.querySelector("ul").append(li);
-  inp.value = "";
+$("#add").click(function () {
+  $("#skills").append(`<li><button>X</button> ${$("#input").val()}</li>`);
 });
 
-let skills = document.getElementById("skills");
-
-skills.addEventListener("click", function (evt) {
-  evt.target.remove();
+$("#skills").on("click", "button", function () {
+  $(this)
+    .closest("li")
+    .fadeOut(1000, function () {
+      $(this).remove();
+    });
 });
