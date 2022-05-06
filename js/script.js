@@ -1,5 +1,9 @@
+let savedEls = [];
+
 $("#add").click(function () {
   $("#skills").append(`<li><button>X</button> ${$("#input").val()}</li>`);
+  savedEls.push($("#input").val());
+  $("#input").val("");
 });
 
 $("#skills").on("click", "button", function () {
@@ -8,4 +12,10 @@ $("#skills").on("click", "button", function () {
     .fadeOut(1000, function () {
       $(this).remove();
     });
+});
+
+$("#clearAll").on("click", function() {
+  $("#skills").fadeOut(1000, function() {
+    $(this).empty().fadeIn();
+  })
 });
