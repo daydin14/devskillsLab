@@ -1,7 +1,9 @@
 // let savedEls = [];
 
 $("#add").click(function () {
-  $("#skills").append(`<li><button>Remove</button> ${$("#input").val()}</li>`);
+  $("#skills").append(
+    `<li><button id="remove">X</button> ${$("#input").val()}</li>`
+  );
   // savedEls.push($("#input").val());
   // console.log(savedEls);
   $("#input").val("");

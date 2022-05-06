@@ -1,6 +1,6 @@
-/* * {
+* {
   box-sizing: border-box;
-} */
+}
 html,
 body {
   background-color: rgb(200, 255, 148);
@@ -13,16 +13,32 @@ h1 {
 ul {
   list-style: none;
 }
-#input {
-  font-family: "Purple Purse", cursive;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
+
 .devbox {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+}
+
+.functions {
+  display: flex;
+  flex-direction: row;
+}
+#input {
+  font-family: "Purple Purse", cursive;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 200px;
+  height: 40px;
+}
+#add {
+  width: 40px;
+  height: 40px;
+}
+#clearAll {
+  width: 40px;
+  height: 40px;
 }
