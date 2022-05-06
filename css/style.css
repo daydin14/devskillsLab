@@ -4,6 +4,7 @@
 html,
 body {
   background-color: rgb(200, 255, 148);
+  font-family: "Purple Purse", cursive;
 }
 h1 {
   text-align: center;
@@ -13,6 +14,7 @@ ul {
   list-style: none;
 }
 #input {
+  font-family: "Purple Purse", cursive;
   display: flex;
   flex-direction: row;
   justify-content: space-between;

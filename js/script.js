@@ -1,9 +1,9 @@
-let savedEls = [];
+// let savedEls = [];
 
 $("#add").click(function () {
-  $("#skills").append(`<li><button>X</button> ${$("#input").val()}</li>`);
-  savedEls.push($("#input").val());
-  console.log(savedEls);
+  $("#skills").append(`<li><button>Remove</button> ${$("#input").val()}</li>`);
+  // savedEls.push($("#input").val());
+  // console.log(savedEls);
   $("#input").val("");
 });
 
@@ -15,7 +15,7 @@ $("#skills").on("click", "button", function () {
     });
 });
 
-$("#clearAll").on("click", function () {
+$("#clearAll").click(function () {
   $("#skills").fadeOut(1000, function () {
     $(this).empty().fadeIn();
   });
