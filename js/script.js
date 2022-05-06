@@ -15,8 +15,8 @@ $("#skills").on("click", "button", function () {
     });
 });
 
-$("#clearAll").on("click", function() {
-  $("#skills").fadeOut(1000, function() {
+$("#clearAll").on("click", function () {
+  $("#skills").fadeOut(1000, function () {
     $(this).empty().fadeIn();
-  })
+  });
 });
